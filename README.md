@@ -8,7 +8,7 @@ Here we study and compare the asset allocation methodology followed through mean
 - MVO allows investors to find the biggest reward at a given level of risk or the least risk at a given level of return.
 
 The objective function is : 
-$$\max _{w} w^{T} \mu -\frac{\delta}{2} w^{T} \Sigma w$$
+$\max _{w} w^{T} \mu -\frac{\delta}{2} w^{T} \Sigma w$
 
 Subject to Constraints : 
 
