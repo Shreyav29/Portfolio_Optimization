@@ -8,6 +8,10 @@ SE = $'\sqrt{2}'$
 
 $`\sqrt{2}`$
 
+\begin{equation*}
+P(E)   = {n \choose k} p^k (1-p)^{ n-k} 
+\end{equation*}
+
 ## Mean Variance portfolio Optimization 
 - In Mean variance optimization, we weigh the risk of the portfolio against the expected return and try to maximise the return while minimizing the varince. 
 - MVO allows investors to find the biggest reward at a given level of risk or the least risk at a given level of return.
