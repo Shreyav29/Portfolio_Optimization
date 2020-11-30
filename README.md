@@ -3,7 +3,7 @@
 Here we study and compare the asset allocation methodology followed through mean variance portfolio optimization(MVO) and Sharpe Ratio optimization.
 
 
-# Mean Variance portfolio Optimization 
+## Mean Variance portfolio Optimization 
 - In Mean variance optimization, we weigh the risk of the portfolio against the expected return and try to maximise the return while minimizing the varince. 
 - MVO allows investors to find the biggest reward at a given level of risk or the least risk at a given level of return.
 
@@ -26,7 +26,7 @@ For the given problem the risk averseness of investor is taken as 1.
 - Due to the high vlatility if the return chnages next period we are bound to rebalance the portfolio. Hence a much better and balanced approach would be to optimize the sharpe ratio. 
 
 
-# Sharpe ratio Optimization : 
+## Sharpe ratio Optimization : 
 
 Objective function: 
 $$   max \frac{w^{T}r_{p} - r_{f} }{\sqrt{w^{T} \Sigma w}}$$
