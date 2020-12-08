@@ -1,45 +1,17 @@
 # Asset Allocation using Convex Portfolio Optimization
 
-Here we study and compare the asset allocation methodology followed through mean variance portfolio optimization(MVO) and Sharpe Ratio optimization.
+## Objective: 
+- In this project we study and compare the asset allocation methodology followed through mean variance portfolio optimization (MVO) and Sharpe Ratio optimization by using the PyPortfolioOpt library in python 
 
+## Methodology: 
+- Performed stock selection by choosing eight stocks which span across five industries and have a dispersed range of correlations. Downloaded the stock prices from yfinance library in python. 
+- Analysed the stock prices, returns and correlations. 
+- Formulated the objective and constraints for mean variance optimisation and solved it using PyPortfolioOpt. Analysed the bias in the results towards high return stocks. 
+- Performed sharpe ratio optimization by finding the optimal risk aversion factor in order to get the maximum sharpe portfolio weights. 
+- Then validated the same results as above by using PyPortfolioOpt's max_sharpe function 
+- Changed the constrains of the portfolio, to allow short selling. Optimized it to realise better sharpe ratio portfolio. 
+- Changed the sector constraints of the portfolio, by restricting the weights on tech stocks. This provided better diversification but resulted in a reduction in sharpe ratio. 
 
-## Mean Variance portfolio Optimization 
-- In Mean variance optimization, we weigh the risk of the portfolio against the expected return and try to maximise the return while minimizing the varince. 
-- MVO allows investors to find the biggest reward at a given level of risk or the least risk at a given level of return.
-
-The objective function is : 
-$\max _{w} w^{T} \mu -\frac{\delta}{2} w^{T} \Sigma w$
-
-Subject to Constraints : 
-
-Budget constraint : Portfolio weights should add upto one :  $\sum_{i=1}^{n} w_{i} = 1$
-
-No Short selling : $ w_{i} > = 0 $
-
-The portfolio return should be positive : $w^{T} \mu > 0 $
-
-For the given problem the risk averseness of investor is taken as 1. 
-
-
-### Analysis : 
-- We can see that the mean variance optimization suggests that we invest all our money in the asset D. This might give a superior return right now but it also has high volatility. 
-- Due to the high vlatility if the return chnages next period we are bound to rebalance the portfolio. Hence a much better and balanced approach would be to optimize the sharpe ratio. 
-
-
-## Sharpe ratio Optimization : 
-
-Objective function: 
-$$   max \frac{w^{T}r_{p} - r_{f} }{\sqrt{w^{T} \Sigma w}}$$
-
-Subject to Constraints : 
-
-Budget constraint : Portfolio weights should add upto one :  $\sum_{i=1}^{n} w_{i} = 1$
-
-No Short selling : $ w_{i} > = 0 $
-
-The portfolio return should be positive : $w^{T} \mu > 0 $
-
-
-### Analysis : 
-- Although the return of sharpe ratio optimization is less, the volatility has significantly reduced. This suggests that the Sharpe ratio optimiation gives a better result that mean variance optimization. 
-
+## Conclusion: 
+- We compared the performance of various optimization methods like the traditional mean variance optimization, sharpe ratio optimization and also explored different ways to further enhance the model performance.
+- Based on the current analysis, we conclude that the sharpe ratio maximization portfolio with short selling allowed is the most optimal portfolio with sharpe ~2.0 and returns ~87%.
