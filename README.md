@@ -1,5 +1,6 @@
 # Asset Allocation using Convex Portfolio Optimization
 
+
 ## Objective: 
 - In this project we study and compare the asset allocation methodology followed through mean variance portfolio optimization (MVO) and Sharpe Ratio optimization by using the PyPortfolioOpt library in python 
 
